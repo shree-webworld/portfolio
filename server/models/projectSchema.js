@@ -31,6 +31,13 @@ const projectSchema = new mongoose.Schema({
                                                 trim:true,
                                                 unique:true
                                               },
+                                              img_url:
+                                              {
+                                                type: String,
+                                                required:[true, "Image url is required"],
+                                                trim:true,
+                                                unique:true
+                                              }
                                            });
 
 export default mongoose.models.Project_details || mongoose.model('Project_details', projectSchema);

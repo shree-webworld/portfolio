@@ -56,7 +56,7 @@ export default function ProjectCards()
                                                 return(
                                                         <div className="p-4 md:w-1/3" key = {currentElement._id}>
                                                          <div className="card w-96 h-full bg-[#3FC236] ">
-                                                            <Img src= {currentElement.web_url} alt="projects" width="250" height="250"/>
+                                                            <Img src= {currentElement.img_url} alt="projects" width="250" height="250"/>
                                                           <div className="card-body ">
                                                             <h2 className="card-title text-xl font-bold text-white" style={{fontFamily: "'Poppins', sans-serif"}}>{currentElement.project_title}</h2>
                                                             <p className="text-white text-lg indent-8">{currentElement.project_description}</p>
